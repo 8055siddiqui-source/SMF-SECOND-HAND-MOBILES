@@ -3,427 +3,889 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="NXxJcFd_uWURAsvy1IzgHlkvE0GFz77EW-CH5OLVHjg" />
 
-    <title>SMF Mobile Deals | Available Mobiles</title>
+    <title>SMF Mobile Deals | Quality Mobile Deals</title>
 
     <meta name="description"
-          content="SMF Mobile Deals - Check currently available mobile phones and contact us for details.">
+        content="SMF Mobile Deals - View available mobile phones, specifications, condition, warranty, photos and prices.">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
-    <!-- ================= HEADER ================= -->
-    <header class="header">
-        <div class="container nav-container">
 
-            <a href="index.html" class="brand">
-                SMF Mobile Deals
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo-text">
+            <span>SMF</span> Mobile Deals
+        </a>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="active">
+                Home
             </a>
 
-            <nav class="navbar">
-                <a href="index.html" class="active">Home</a>
-                <a href="mobiles.html">Mobiles</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+            <a href="mobiles.html">
+                Mobiles
+            </a>
 
-        </div>
-    </header>
+            <a href="contact.html">
+                Contact
+            </a>
 
+        </nav>
 
-    <!-- ================= HERO SECTION ================= -->
-    <section class="hero">
-        <div class="container">
+    </div>
 
-            <div class="hero-content">
-                <p class="hero-small">WELCOME TO</p>
-
-                <h1>
-                    SMF Mobile Deals
-                </h1>
-
-                <p>
-                    Find quality mobile phones at attractive prices.
-                    Check our currently available mobiles and contact us
-                    directly for more information.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="mobiles.html" class="btn">
-                        View Available Mobiles
-                    </a>
-
-                    <a href="tel:8055792660" class="btn btn-outline">
-                        Call Us
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </section>
+</header>
 
 
-    <!-- ================= AVAILABLE MOBILES ================= -->
-    <section class="mobiles-section">
-        <div class="container">
+<!-- ================= HERO ================= -->
 
-            <div class="section-heading">
-                <p class="section-small">OUR STOCK</p>
+<section class="hero">
 
-                <h2>Available Mobiles</h2>
+    <div class="container hero-container">
 
-                <p>
-                    Only mobiles currently added to our available stock
-                    are displayed below.
-                </p>
-            </div>
+        <div class="hero-content">
 
-            <!-- Mobile cards will appear here -->
-            <div id="mobileList" class="mobile-grid"></div>
+            <span class="hero-tag">
+                TRUSTED MOBILE DEALS
+            </span>
 
-        </div>
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-    <section class="about-section">
-        <div class="container">
-
-            <div class="section-heading">
-                <p class="section-small">ABOUT US</p>
-
-                <h2>SMF Mobile Deals</h2>
-            </div>
-
-            <div class="about-content">
-
-                <p>
-                    SMF Mobile Deals provides information about mobile
-                    phones currently available in our stock. Customers
-                    can check mobile specifications, condition, warranty,
-                    accessories and price before contacting us.
-                </p>
-
-                <p>
-                    For availability, price confirmation or any other
-                    enquiry, please contact us directly.
-                </p>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- ================= CONTACT ================= -->
-    <section class="contact-section">
-        <div class="container">
-
-            <div class="section-heading">
-                <p class="section-small">GET IN TOUCH</p>
-
-                <h2>Contact Us</h2>
-            </div>
-
-            <div class="contact-box">
-
-                <div class="contact-item">
-                    <h3>Phone</h3>
-                    <a href="tel:8055792660">
-                        8055792660
-                    </a>
-                </div>
-
-                <div class="contact-item">
-                    <h3>Email</h3>
-                    <a href="mailto:8055siddiqui@gmail.com">
-                        8055siddiqui@gmail.com
-                    </a>
-                </div>
-
-                <div class="contact-item">
-                    <h3>WhatsApp</h3>
-                    <a
-                        href="https://wa.me/918055792660"
-                        target="_blank">
-                        Chat on WhatsApp
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer">
-        <div class="container">
+            <h1>
+                Find Your Next
+                <span>Smartphone</span>
+            </h1>
 
             <p>
-                © <span id="year"></span> SMF Mobile Deals.
-                All Rights Reserved.
+                Explore our currently available mobile phones with
+                complete details about specifications, condition,
+                warranty, photos and price.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="mobiles.html" class="btn">
+                    View Mobiles
+                </a>
+
+                <a href="tel:8055792660" class="btn btn-outline">
+                    Call Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>WHY SMF MOBILE DEALS</span>
+
+            <h2>
+                Simple. Genuine. Transparent.
+            </h2>
+
+            <p>
+                Check complete mobile details before contacting us.
             </p>
 
         </div>
-    </footer>
 
 
-    <!-- ================= JAVASCRIPT ================= -->
-    <script>
+        <div class="features-grid">
 
-        // Get mobile list from localStorage
-        const mobileList = document.getElementById("mobileList");
+            <div class="feature-card">
 
-        let mobiles = [];
+                <div class="feature-icon">
+                    ✓
+                </div>
 
-        try {
-            mobiles = JSON.parse(
+                <h3>
+                    Complete Details
+                </h3>
+
+                <p>
+                    Check specifications, battery health,
+                    condition, warranty and other details.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    ₹
+                </div>
+
+                <h3>
+                    Clear Pricing
+                </h3>
+
+                <p>
+                    See the listed price of every available
+                    mobile before contacting us.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    ☎
+                </div>
+
+                <h3>
+                    Direct Contact
+                </h3>
+
+                <p>
+                    Contact us directly through phone or
+                    WhatsApp for your enquiry.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= AVAILABLE MOBILES ================= -->
+
+<section class="mobiles-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>OUR CURRENT STOCK</span>
+
+            <h2>
+                Available Mobiles
+            </h2>
+
+            <p>
+                Only mobiles currently available in our stock
+                are displayed below.
+            </p>
+
+        </div>
+
+
+        <div id="mobileList" class="mobile-grid"></div>
+
+
+        <div class="view-all-wrapper">
+
+            <a href="mobiles.html" class="btn">
+                View All Available Mobiles
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section">
+
+    <div class="container about-container">
+
+        <div class="about-content">
+
+            <span>
+                ABOUT SMF
+            </span>
+
+            <h2>
+                Your Mobile,
+                Your Choice.
+            </h2>
+
+            <p>
+                SMF Mobile Deals provides information about
+                mobile phones currently available in our stock.
+            </p>
+
+            <p>
+                Customers can check photos, specifications,
+                battery health, condition, warranty, bill,
+                box and price before contacting us.
+            </p>
+
+            <a href="mobiles.html" class="text-link">
+                Explore Available Mobiles →
+            </a>
+
+        </div>
+
+
+        <div class="about-highlight">
+
+            <div class="highlight-item">
+                <strong>6</strong>
+                <span>Photos Per Mobile</span>
+            </div>
+
+            <div class="highlight-item">
+                <strong>Clear</strong>
+                <span>Mobile Details</span>
+            </div>
+
+            <div class="highlight-item">
+                <strong>Direct</strong>
+                <span>Customer Contact</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT CTA ================= -->
+
+<section class="contact-cta">
+
+    <div class="container">
+
+        <div class="cta-content">
+
+            <span>
+                HAVE A QUESTION?
+            </span>
+
+            <h2>
+                Interested in a Mobile?
+            </h2>
+
+            <p>
+                Contact us directly for availability,
+                price confirmation and more information.
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="tel:8055792660" class="btn">
+                    Call 8055792660
+                </a>
+
+                <a
+                    href="https://wa.me/918055792660"
+                    target="_blank"
+                    class="btn btn-outline">
+
+                    WhatsApp
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>
+                CONTACT US
+            </span>
+
+            <h2>
+                Let's Connect
+            </h2>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <h3>
+                    Phone
+                </h3>
+
+                <a href="tel:8055792660">
+                    8055792660
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    WhatsApp
+                </h3>
+
+                <a
+                    href="https://wa.me/918055792660"
+                    target="_blank">
+
+                    Chat With Us
+
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <h3>
+                    Email
+                </h3>
+
+                <a href="mailto:8055siddiqui@gmail.com">
+
+                    8055siddiqui@gmail.com
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div>
+
+            <a href="index.html" class="footer-logo">
+                <span>SMF</span> Mobile Deals
+            </a>
+
+            <p>
+                Quality mobile deals with clear information.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="mobiles.html">
+                Mobiles
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="year"></span>
+            SMF Mobile Deals.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+let mobiles = [];
+
+
+/* ================= LOAD DATA ================= */
+
+function loadMobiles() {
+
+    try {
+
+        mobiles =
+            JSON.parse(
                 localStorage.getItem("smfMobiles")
             ) || [];
-        } catch (error) {
-            mobiles = [];
-        }
+
+    } catch (error) {
+
+        mobiles = [];
+
+    }
+
+    displayMobiles();
+
+}
 
 
-        // Display available mobiles
-        function displayMobiles() {
+/* ================= GET ALL IMAGES ================= */
 
-            mobileList.innerHTML = "";
+function getMobileImages(mobile) {
 
-            if (mobiles.length === 0) {
+    let images = [];
 
-                mobileList.innerHTML = `
-                    <div class="no-mobiles">
-                        <h3>No Mobiles Available</h3>
-                        <p>
-                            There are currently no mobiles available.
-                            Please check again later.
-                        </p>
+    if (
+        Array.isArray(mobile.images)
+    ) {
 
-                        <a href="mobiles.html" class="btn">
-                            Check Mobiles
-                        </a>
+        images = mobile.images.filter(
+            image => image && image.trim() !== ""
+        );
+
+    }
+
+
+    /*
+     * Compatibility with old one-photo mobiles
+     */
+
+    if (
+        images.length === 0 &&
+        mobile.image
+    ) {
+
+        images.push(mobile.image);
+
+    }
+
+
+    return images;
+
+}
+
+
+/* ================= DISPLAY MOBILES ================= */
+
+function displayMobiles() {
+
+    const mobileList =
+        document.getElementById("mobileList");
+
+    mobileList.innerHTML = "";
+
+
+    if (mobiles.length === 0) {
+
+        mobileList.innerHTML = `
+
+            <div class="empty-stock">
+
+                <div class="empty-icon">
+                    📱
+                </div>
+
+                <h3>
+                    No Mobiles Available Right Now
+                </h3>
+
+                <p>
+                    Available mobile stock will appear
+                    here when mobiles are added.
+                </p>
+
+                <a href="mobiles.html" class="btn">
+                    Check Mobiles
+                </a>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    mobiles.slice(0, 6).forEach(
+        function(mobile) {
+
+            const card =
+                document.createElement("div");
+
+            card.className =
+                "mobile-card";
+
+
+            const images =
+                getMobileImages(mobile);
+
+
+            const mobileName =
+                `${mobile.brand || ""} ${
+                    mobile.model || ""
+                }`.trim();
+
+
+            /*
+             * CREATE SIX-PHOTO GALLERY
+             */
+
+            let galleryHTML = "";
+
+
+            if (images.length > 0) {
+
+                galleryHTML = `
+
+                    <div class="mobile-gallery">
+
+                        ${images.map(
+                            function(image, imageIndex) {
+
+                                return `
+
+                                    <img
+                                        src="${image}"
+                                        alt="${mobileName} Photo ${
+                                            imageIndex + 1
+                                        }"
+                                        class="gallery-image"
+                                        loading="lazy"
+                                    >
+
+                                `;
+
+                            }
+                        ).join("")}
+
                     </div>
+
                 `;
 
-                return;
+            } else {
+
+                galleryHTML = `
+
+                    <div class="no-image">
+                        <span>📱</span>
+                        <p>No Image</p>
+                    </div>
+
+                `;
+
             }
 
 
-            mobiles.forEach(function (mobile) {
+            card.innerHTML = `
 
-                const card = document.createElement("div");
+                <div class="mobile-image-wrapper">
 
-                card.className = "mobile-card";
+                    ${galleryHTML}
+
+                    <span class="stock-badge">
+                        AVAILABLE
+                    </span>
+
+                </div>
 
 
-                card.innerHTML = `
+                <div class="mobile-info">
 
-                    <div class="mobile-image">
+                    <h3>
+                        ${mobileName || "Mobile Phone"}
+                    </h3>
+
+
+                    ${
+                        mobile.price
+
+                        ?
+
+                        `<div class="mobile-price">
+                            ₹${mobile.price}
+                        </div>`
+
+                        : ""
+
+                    }
+
+
+                    <div class="mobile-specs">
 
                         ${
-                            mobile.image
+                            mobile.ram
+
                             ?
-                            `<img src="${mobile.image}"
-                                  alt="${mobile.brand || ""} ${mobile.model || ""}">`
-                            :
-                            `<div class="no-image">
-                                No Image
-                             </div>`
-                        }
 
-                    </div>
-
-
-                    <div class="mobile-info">
-
-                        <span class="available-badge">
-                            AVAILABLE
-                        </span>
-
-                        <h3>
-                            ${mobile.brand || ""}
-                            ${mobile.model || ""}
-                        </h3>
-
-
-                        <div class="specifications">
-
-                            ${
-                                mobile.ram
-                                ?
-                                `<p>
-                                    <strong>RAM:</strong>
+                            `<div>
+                                <strong>RAM</strong>
+                                <span>
                                     ${mobile.ram}
-                                </p>`
-                                : ""
-                            }
+                                </span>
+                            </div>`
 
-                            ${
-                                mobile.storage
-                                ?
-                                `<p>
-                                    <strong>Storage:</strong>
-                                    ${mobile.storage}
-                                </p>`
-                                : ""
-                            }
-
-                            ${
-                                mobile.display
-                                ?
-                                `<p>
-                                    <strong>Display:</strong>
-                                    ${mobile.display}
-                                </p>`
-                                : ""
-                            }
-
-                            ${
-                                mobile.camera
-                                ?
-                                `<p>
-                                    <strong>Camera:</strong>
-                                    ${mobile.camera}
-                                </p>`
-                                : ""
-                            }
-
-                            ${
-                                mobile.battery
-                                ?
-                                `<p>
-                                    <strong>Battery Health:</strong>
-                                    ${mobile.battery}
-                                </p>`
-                                : ""
-                            }
-
-                            ${
-                                mobile.condition
-                                ?
-                                `<p>
-                                    <strong>Condition:</strong>
-                                    ${mobile.condition}
-                                </p>`
-                                : ""
-                            }
-
-                            ${
-                                mobile.warranty
-                                ?
-                                `<p>
-                                    <strong>Warranty:</strong>
-                                    ${mobile.warranty}
-                                </p>`
-                                : ""
-                            }
-
-                            ${
-                                mobile.age
-                                ?
-                                `<p>
-                                    <strong>Age:</strong>
-                                    ${mobile.age}
-                                </p>`
-                                : ""
-                            }
-
-                            ${
-                                mobile.bill
-                                ?
-                                `<p>
-                                    <strong>Bill:</strong>
-                                    ${mobile.bill}
-                                </p>`
-                                : ""
-                            }
-
-                            ${
-                                mobile.box
-                                ?
-                                `<p>
-                                    <strong>Box:</strong>
-                                    ${mobile.box}
-                                </p>`
-                                : ""
-                            }
-
-                        </div>
-
-
-                        ${
-                            mobile.price
-                            ?
-                            `<div class="mobile-price">
-                                ₹${mobile.price}
-                             </div>`
                             : ""
                         }
 
 
-                        <div class="mobile-actions">
+                        ${
+                            mobile.storage
 
-                            <a
-                                href="tel:8055792660"
-                                class="btn">
-                                Call
-                            </a>
+                            ?
 
-                            <a
-                                href="https://wa.me/918055792660?text=${encodeURIComponent(
-                                    "Hello, I am interested in " +
-                                    (mobile.brand || "") +
-                                    " " +
-                                    (mobile.model || "")
-                                )}"
-                                target="_blank"
-                                class="btn whatsapp-btn">
-                                WhatsApp
-                            </a>
+                            `<div>
+                                <strong>Storage</strong>
+                                <span>
+                                    ${mobile.storage}
+                                </span>
+                            </div>`
 
-                        </div>
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.display
+
+                            ?
+
+                            `<div>
+                                <strong>Display</strong>
+                                <span>
+                                    ${mobile.display}
+                                </span>
+                            </div>`
+
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.camera
+
+                            ?
+
+                            `<div>
+                                <strong>Camera</strong>
+                                <span>
+                                    ${mobile.camera}
+                                </span>
+                            </div>`
+
+                            : ""
+                        }
 
                     </div>
-                `;
 
 
-                mobileList.appendChild(card);
+                    <div class="mobile-details">
 
-            });
+                        ${
+                            mobile.battery
+
+                            ?
+
+                            `<p>
+                                <strong>Battery:</strong>
+                                ${mobile.battery}
+                            </p>`
+
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.condition
+
+                            ?
+
+                            `<p>
+                                <strong>Condition:</strong>
+                                ${mobile.condition}
+                            </p>`
+
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.warranty
+
+                            ?
+
+                            `<p>
+                                <strong>Warranty:</strong>
+                                ${mobile.warranty}
+                            </p>`
+
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.age
+
+                            ?
+
+                            `<p>
+                                <strong>Age:</strong>
+                                ${mobile.age}
+                            </p>`
+
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.bill
+
+                            ?
+
+                            `<p>
+                                <strong>Bill:</strong>
+                                ${mobile.bill}
+                            </p>`
+
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.box
+
+                            ?
+
+                            `<p>
+                                <strong>Box:</strong>
+                                ${mobile.box}
+                            </p>`
+
+                            : ""
+                        }
+
+                    </div>
+
+
+                    ${
+                        images.length > 0
+
+                        ?
+
+                        `<div class="photo-count">
+                            📷 ${images.length}
+                            ${images.length === 1
+                                ? "Photo"
+                                : "Photos"}
+                        </div>`
+
+                        : ""
+
+                    }
+
+
+                    <div class="mobile-actions">
+
+                        <a
+                            href="tel:8055792660"
+                            class="btn">
+
+                            Call
+
+                        </a>
+
+
+                        <a
+                            href="https://wa.me/918055792660?text=${encodeURIComponent(
+                                "Hello, I am interested in " +
+                                mobileName
+                            )}"
+                            target="_blank"
+                            class="btn whatsapp-btn">
+
+                            WhatsApp
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            `;
+
+
+            mobileList.appendChild(card);
+
+        }
+    );
+
+}
+
+
+/* ================= STORAGE UPDATE ================= */
+
+window.addEventListener(
+    "storage",
+    function(event) {
+
+        if (
+            event.key === "smfMobiles"
+        ) {
+
+            loadMobiles();
 
         }
 
-
-        // Display mobiles when page loads
-        displayMobiles();
-
-
-        // Update automatically if localStorage changes
-        window.addEventListener("storage", function (event) {
-
-            if (event.key === "smfMobiles") {
-
-                try {
-                    mobiles = JSON.parse(event.newValue) || [];
-                } catch (error) {
-                    mobiles = [];
-                }
-
-                displayMobiles();
-            }
-
-        });
+    }
+);
 
 
-        // Current year
-        document.getElementById("year").textContent =
-            new Date().getFullYear();
+/* ================= YEAR ================= */
 
-    </script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+/* ================= START ================= */
+
+loadMobiles();
+
+</script>
 
 </body>
 </html>
