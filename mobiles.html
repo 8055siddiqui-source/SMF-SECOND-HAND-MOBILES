@@ -1,1412 +1,949 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Available Mobiles | SMF Mobile Deals</title>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Available Mobiles | SMF Mobile Deals
+    </title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
-    <header class="header">
-        <div class="container nav-container">
 
-            <a href="index.html" class="logo-text">
-                <span>SMF</span> Mobile Deals
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo-text">
+            <span>SMF</span> Mobile Deals
+        </a>
+
+
+        <nav class="navbar">
+
+            <a href="index.html">
+                Home
             </a>
 
-            <nav class="navbar">
-                <a href="index.html">Home</a>
-                <a href="mobiles.html" class="active">Mobiles</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+            <a href="mobiles.html" class="active">
+                Mobiles
+            </a>
 
-        </div>
-    </header>
+            <a href="contact.html">
+                Contact
+            </a>
 
+        </nav>
 
-    <!-- ================= PAGE TITLE ================= -->
-    <section class="page-header">
-        <div class="container">
+    </div>
 
-            <span>SMF MOBILE DEALS</span>
-
-            <h1>Available Mobiles</h1>
-
-            <p>
-                Add and manage the mobile phones currently available in stock.
-            </p>
-
-        </div>
-    </section>
+</header>
 
 
-    <!-- ================= ADD MOBILE ================= -->
-    <section class="mobile-management">
+<!-- ================= PAGE HEADER ================= -->
 
-        <div class="container">
+<section class="page-header">
 
-            <div class="form-card">
+    <div class="container">
 
-                <div class="form-heading">
+        <span>
+            SMF MOBILE DEALS
+        </span>
 
-                    <span>MANAGE STOCK</span>
+        <h1>
+            Available Mobiles
+        </h1>
 
-                    <h2 id="formTitle">
-                        Add Available Mobile
-                    </h2>
+        <p>
+            Add and manage the mobile phones currently available.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ADD MOBILE ================= -->
+
+<section class="mobile-management">
+
+    <div class="container">
+
+        <div class="form-card">
+
+            <div class="form-heading">
+
+                <span>
+                    MANAGE STOCK
+                </span>
+
+                <h2 id="formTitle">
+                    Add Available Mobile
+                </h2>
+
+            </div>
+
+
+            <form id="mobileForm">
+
+
+                <input
+                    type="hidden"
+                    id="editIndex"
+                    value="-1"
+                >
+
+
+                <!-- ================= SIX PHOTOS ================= -->
+
+                <div class="form-group">
+
+                    <label>
+                        Mobile Photos
+                        <small>
+                            (Add up to 6 photos)
+                        </small>
+                    </label>
+
+
+                    <div class="photo-upload-grid">
+
+
+                        <!-- PHOTO 1 -->
+
+                        <div class="photo-input">
+
+                            <label for="image1">
+                                Photo 1
+                            </label>
+
+                            <input
+                                type="file"
+                                id="image1"
+                                accept="image/*"
+                            >
+
+                            <div
+                                class="photo-preview"
+                                id="preview1">
+
+                                No Photo
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PHOTO 2 -->
+
+                        <div class="photo-input">
+
+                            <label for="image2">
+                                Photo 2
+                            </label>
+
+                            <input
+                                type="file"
+                                id="image2"
+                                accept="image/*"
+                            >
+
+                            <div
+                                class="photo-preview"
+                                id="preview2">
+
+                                No Photo
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PHOTO 3 -->
+
+                        <div class="photo-input">
+
+                            <label for="image3">
+                                Photo 3
+                            </label>
+
+                            <input
+                                type="file"
+                                id="image3"
+                                accept="image/*"
+                            >
+
+                            <div
+                                class="photo-preview"
+                                id="preview3">
+
+                                No Photo
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PHOTO 4 -->
+
+                        <div class="photo-input">
+
+                            <label for="image4">
+                                Photo 4
+                            </label>
+
+                            <input
+                                type="file"
+                                id="image4"
+                                accept="image/*"
+                            >
+
+                            <div
+                                class="photo-preview"
+                                id="preview4">
+
+                                No Photo
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PHOTO 5 -->
+
+                        <div class="photo-input">
+
+                            <label for="image5">
+                                Photo 5
+                            </label>
+
+                            <input
+                                type="file"
+                                id="image5"
+                                accept="image/*"
+                            >
+
+                            <div
+                                class="photo-preview"
+                                id="preview5">
+
+                                No Photo
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- PHOTO 6 -->
+
+                        <div class="photo-input">
+
+                            <label for="image6">
+                                Photo 6
+                            </label>
+
+                            <input
+                                type="file"
+                                id="image6"
+                                accept="image/*"
+                            >
+
+                            <div
+                                class="photo-preview"
+                                id="preview6">
+
+                                No Photo
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
 
-                <form id="mobileForm">
+                <!-- ================= BRAND / MODEL ================= -->
 
-                    <input
-                        type="hidden"
-                        id="editIndex"
-                        value="-1"
-                    >
+                <div class="form-row">
 
-
-                    <!-- ================= SIX PHOTOS ================= -->
                     <div class="form-group">
 
-                        <label>
-                            Mobile Photos
-                            <small>(Maximum 6 photos)</small>
-                        </label>
-
-                        <div class="photo-upload-grid">
-
-                            <div class="photo-input">
-                                <label for="image1">
-                                    Photo 1
-                                </label>
-
-                                <input
-                                    type="file"
-                                    id="image1"
-                                    accept="image/*"
-                                >
-
-                                <div
-                                    class="photo-preview"
-                                    id="preview1">
-                                    No Photo
-                                </div>
-                            </div>
-
-
-                            <div class="photo-input">
-                                <label for="image2">
-                                    Photo 2
-                                </label>
-
-                                <input
-                                    type="file"
-                                    id="image2"
-                                    accept="image/*"
-                                >
-
-                                <div
-                                    class="photo-preview"
-                                    id="preview2">
-                                    No Photo
-                                </div>
-                            </div>
-
-
-                            <div class="photo-input">
-                                <label for="image3">
-                                    Photo 3
-                                </label>
-
-                                <input
-                                    type="file"
-                                    id="image3"
-                                    accept="image/*"
-                                >
-
-                                <div
-                                    class="photo-preview"
-                                    id="preview3">
-                                    No Photo
-                                </div>
-                            </div>
-
-
-                            <div class="photo-input">
-                                <label for="image4">
-                                    Photo 4
-                                </label>
-
-                                <input
-                                    type="file"
-                                    id="image4"
-                                    accept="image/*"
-                                >
-
-                                <div
-                                    class="photo-preview"
-                                    id="preview4">
-                                    No Photo
-                                </div>
-                            </div>
-
-
-                            <div class="photo-input">
-                                <label for="image5">
-                                    Photo 5
-                                </label>
-
-                                <input
-                                    type="file"
-                                    id="image5"
-                                    accept="image/*"
-                                >
-
-                                <div
-                                    class="photo-preview"
-                                    id="preview5">
-                                    No Photo
-                                </div>
-                            </div>
-
-
-                            <div class="photo-input">
-                                <label for="image6">
-                                    Photo 6
-                                </label>
-
-                                <input
-                                    type="file"
-                                    id="image6"
-                                    accept="image/*"
-                                >
-
-                                <div
-                                    class="photo-preview"
-                                    id="preview6">
-                                    No Photo
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ================= BRAND ================= -->
-                    <div class="form-row">
-
-                        <div class="form-group">
-
-                            <label for="brand">
-                                Brand
-                            </label>
-
-                            <input
-                                type="text"
-                                id="brand"
-                                placeholder="e.g. Apple"
-                                required
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="model">
-                                Model
-                            </label>
-
-                            <input
-                                type="text"
-                                id="model"
-                                placeholder="e.g. iPhone 14"
-                                required
-                            >
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ================= RAM / STORAGE ================= -->
-                    <div class="form-row">
-
-                        <div class="form-group">
-
-                            <label for="ram">
-                                RAM
-                            </label>
-
-                            <input
-                                type="text"
-                                id="ram"
-                                placeholder="e.g. 8 GB"
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="storage">
-                                Storage
-                            </label>
-
-                            <input
-                                type="text"
-                                id="storage"
-                                placeholder="e.g. 128 GB"
-                            >
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ================= DISPLAY / CAMERA ================= -->
-                    <div class="form-row">
-
-                        <div class="form-group">
-
-                            <label for="display">
-                                Display
-                            </label>
-
-                            <input
-                                type="text"
-                                id="display"
-                                placeholder="e.g. 6.1 inch"
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="camera">
-                                Camera
-                            </label>
-
-                            <input
-                                type="text"
-                                id="camera"
-                                placeholder="e.g. 48 MP"
-                            >
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ================= BATTERY / CONDITION ================= -->
-                    <div class="form-row">
-
-                        <div class="form-group">
-
-                            <label for="battery">
-                                Battery Health
-                            </label>
-
-                            <input
-                                type="text"
-                                id="battery"
-                                placeholder="e.g. 92%"
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="condition">
-                                Condition
-                            </label>
-
-                            <select id="condition">
-
-                                <option value="">
-                                    Select Condition
-                                </option>
-
-                                <option value="Brand New">
-                                    Brand New
-                                </option>
-
-                                <option value="Like New">
-                                    Like New
-                                </option>
-
-                                <option value="Excellent">
-                                    Excellent
-                                </option>
-
-                                <option value="Good">
-                                    Good
-                                </option>
-
-                                <option value="Fair">
-                                    Fair
-                                </option>
-
-                            </select>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ================= WARRANTY / AGE ================= -->
-                    <div class="form-row">
-
-                        <div class="form-group">
-
-                            <label for="warranty">
-                                Warranty
-                            </label>
-
-                            <input
-                                type="text"
-                                id="warranty"
-                                placeholder="e.g. 6 Months"
-                            >
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="age">
-                                How Many Years Old
-                            </label>
-
-                            <input
-                                type="text"
-                                id="age"
-                                placeholder="e.g. 1 Year"
-                            >
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ================= BILL / BOX ================= -->
-                    <div class="form-row">
-
-                        <div class="form-group">
-
-                            <label for="bill">
-                                Bill Available
-                            </label>
-
-                            <select id="bill">
-
-                                <option value="Yes">
-                                    Yes
-                                </option>
-
-                                <option value="No">
-                                    No
-                                </option>
-
-                            </select>
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="box">
-                                Box Available
-                            </label>
-
-                            <select id="box">
-
-                                <option value="Yes">
-                                    Yes
-                                </option>
-
-                                <option value="No">
-                                    No
-                                </option>
-
-                            </select>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- ================= PRICE ================= -->
-                    <div class="form-group">
-
-                        <label for="price">
-                            Price
+                        <label for="brand">
+                            Brand
                         </label>
 
                         <input
-                            type="number"
-                            id="price"
-                            placeholder="Enter price in ₹"
+                            type="text"
+                            id="brand"
+                            placeholder="e.g. Apple"
+                            required
                         >
 
                     </div>
 
 
-                    <!-- ================= BUTTONS ================= -->
-                    <div class="form-buttons">
+                    <div class="form-group">
 
-                        <button
-                            type="submit"
-                            class="btn"
-                            id="submitButton">
-                            Add Mobile
-                        </button>
+                        <label for="model">
+                            Model
+                        </label>
 
-
-                        <button
-                            type="button"
-                            class="btn btn-outline"
-                            id="cancelButton"
-                            style="display:none;">
-                            Cancel
-                        </button>
+                        <input
+                            type="text"
+                            id="model"
+                            placeholder="e.g. iPhone 14"
+                            required
+                        >
 
                     </div>
 
-                </form>
+                </div>
 
-            </div>
+
+                <!-- ================= RAM / STORAGE ================= -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="ram">
+                            RAM
+                        </label>
+
+                        <input
+                            type="text"
+                            id="ram"
+                            placeholder="e.g. 8 GB"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="storage">
+                            Storage
+                        </label>
+
+                        <input
+                            type="text"
+                            id="storage"
+                            placeholder="e.g. 128 GB"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= DISPLAY / CAMERA ================= -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="display">
+                            Display
+                        </label>
+
+                        <input
+                            type="text"
+                            id="display"
+                            placeholder="e.g. 6.1 inch"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="camera">
+                            Camera
+                        </label>
+
+                        <input
+                            type="text"
+                            id="camera"
+                            placeholder="e.g. 48 MP"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= BATTERY / CONDITION ================= -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="battery">
+                            Battery Health
+                        </label>
+
+                        <input
+                            type="text"
+                            id="battery"
+                            placeholder="e.g. 92%"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="condition">
+                            Condition
+                        </label>
+
+                        <select id="condition">
+
+                            <option value="">
+                                Select Condition
+                            </option>
+
+                            <option value="Brand New">
+                                Brand New
+                            </option>
+
+                            <option value="Like New">
+                                Like New
+                            </option>
+
+                            <option value="Excellent">
+                                Excellent
+                            </option>
+
+                            <option value="Good">
+                                Good
+                            </option>
+
+                            <option value="Fair">
+                                Fair
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= WARRANTY / AGE ================= -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="warranty">
+                            Warranty
+                        </label>
+
+                        <input
+                            type="text"
+                            id="warranty"
+                            placeholder="e.g. 6 Months"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="age">
+                            How Many Years Old
+                        </label>
+
+                        <input
+                            type="text"
+                            id="age"
+                            placeholder="e.g. 1 Year"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= BILL / BOX ================= -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="bill">
+                            Bill Available
+                        </label>
+
+                        <select id="bill">
+
+                            <option value="Yes">
+                                Yes
+                            </option>
+
+                            <option value="No">
+                                No
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="box">
+                            Box Available
+                        </label>
+
+                        <select id="box">
+
+                            <option value="Yes">
+                                Yes
+                            </option>
+
+                            <option value="No">
+                                No
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRICE ================= -->
+
+                <div class="form-group">
+
+                    <label for="price">
+                        Price
+                    </label>
+
+                    <input
+                        type="number"
+                        id="price"
+                        placeholder="Enter price in ₹"
+                    >
+
+                </div>
+
+
+                <!-- ================= BUTTONS ================= -->
+
+                <div class="form-buttons">
+
+                    <button
+                        type="submit"
+                        class="btn"
+                        id="submitButton">
+
+                        Add Mobile
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="btn btn-outline"
+                        id="cancelButton"
+                        style="display:none;">
+
+                        Cancel
+
+                    </button>
+
+                </div>
+
+            </form>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= AVAILABLE STOCK ================= -->
-    <section class="mobiles-section">
+<!-- ================= CURRENT STOCK ================= -->
 
-        <div class="container">
+<section class="mobiles-section">
 
-            <div class="section-heading">
+    <div class="container">
 
-                <span>CURRENT STOCK</span>
+        <div class="section-heading">
 
-                <h2>Available Mobiles</h2>
+            <span>
+                CURRENT STOCK
+            </span>
 
-                <p>
-                    Manage the mobiles currently available.
-                </p>
-
-            </div>
-
-
-            <div
-                id="mobileList"
-                class="mobile-grid">
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer">
-
-        <div class="container footer-container">
-
-            <div>
-
-                <a
-                    href="index.html"
-                    class="footer-logo">
-                    <span>SMF</span> Mobile Deals
-                </a>
-
-                <p>
-                    Quality mobile deals with clear information.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="index.html">
-                    Home
-                </a>
-
-                <a href="mobiles.html">
-                    Mobiles
-                </a>
-
-                <a href="contact.html">
-                    Contact
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
+            <h2>
+                Available Mobiles
+            </h2>
 
             <p>
-                © <span id="year"></span>
-                SMF Mobile Deals.
-                All Rights Reserved.
+                Every photo added to a mobile is displayed below.
             </p>
 
         </div>
 
-    </footer>
 
+        <div
+            id="mobileList"
+            class="mobile-grid">
 
-    <!-- ================= JAVASCRIPT ================= -->
-    <script>
+        </div>
 
-        /* ============================================
-           LOAD EXISTING MOBILE DATA
-        ============================================ */
+    </div>
 
-        let mobiles = [];
+</section>
 
-        try {
 
-            mobiles =
-                JSON.parse(
-                    localStorage.getItem("smfMobiles")
-                ) || [];
+<!-- ================= FOOTER ================= -->
 
-        } catch (error) {
+<footer class="footer">
 
-            mobiles = [];
+    <div class="container footer-container">
 
-        }
+        <div>
 
+            <a
+                href="index.html"
+                class="footer-logo">
 
-        let imageData = [
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ];
+                <span>SMF</span> Mobile Deals
 
+            </a>
 
-        /* ============================================
-           IMAGE UPLOAD + PREVIEW
-        ============================================ */
+            <p>
+                Quality mobile deals with clear information.
+            </p>
 
-        for (let i = 1; i <= 6; i++) {
+        </div>
 
-            const input =
-                document.getElementById("image" + i);
 
-            const preview =
-                document.getElementById("preview" + i);
+        <div class="footer-links">
 
+            <a href="index.html">
+                Home
+            </a>
 
-            input.addEventListener(
-                "change",
-                function () {
+            <a href="mobiles.html">
+                Mobiles
+            </a>
 
-                    const file =
-                        this.files[0];
+            <a href="contact.html">
+                Contact
+            </a>
 
-                    if (!file) {
-                        return;
-                    }
+        </div>
 
+    </div>
 
-                    const reader =
-                        new FileReader();
 
+    <div class="footer-bottom">
 
-                    reader.onload =
-                        function (event) {
+        <p>
+            © <span id="year"></span>
+            SMF Mobile Deals.
+            All Rights Reserved.
+        </p>
 
-                            imageData[i - 1] =
-                                event.target.result;
+    </div>
 
+</footer>
 
-                            preview.innerHTML = `
-                                <img
-                                    src="${event.target.result}"
-                                    alt="Mobile Photo ${i}"
-                                >
-                            `;
 
-                        };
+<!-- ================= JAVASCRIPT ================= -->
 
+<script>
 
-                    reader.readAsDataURL(file);
+let mobiles = [];
 
-                }
-            );
+let imageData = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+];
 
-        }
 
+/* ================= LOAD DATA ================= */
 
-        /* ============================================
-           FORM SUBMIT
-        ============================================ */
+function loadData() {
 
-        document
-            .getElementById("mobileForm")
-            .addEventListener(
-                "submit",
-                function (event) {
+    try {
 
-                    event.preventDefault();
-
-
-                    const editIndex =
-                        parseInt(
-                            document.getElementById(
-                                "editIndex"
-                            ).value
-                        );
-
-
-                    const mobile = {
-
-                        images: imageData,
-
-                        /*
-                         * Keep the old image field too.
-                         * This prevents older saved mobiles
-                         * from breaking.
-                         */
-                        image:
-                            imageData[0] || "",
-
-                        brand:
-                            document
-                                .getElementById("brand")
-                                .value
-                                .trim(),
-
-                        model:
-                            document
-                                .getElementById("model")
-                                .value
-                                .trim(),
-
-                        ram:
-                            document
-                                .getElementById("ram")
-                                .value
-                                .trim(),
-
-                        storage:
-                            document
-                                .getElementById("storage")
-                                .value
-                                .trim(),
+        mobiles =
+            JSON.parse(
+                localStorage.getItem("smfMobiles")
+            ) || [];
 
-                        display:
-                            document
-                                .getElementById("display")
-                                .value
-                                .trim(),
+    } catch (error) {
 
-                        camera:
-                            document
-                                .getElementById("camera")
-                                .value
-                                .trim(),
+        mobiles = [];
 
-                        battery:
-                            document
-                                .getElementById("battery")
-                                .value
-                                .trim(),
+    }
 
-                        condition:
-                            document
-                                .getElementById("condition")
-                                .value,
+}
 
-                        warranty:
-                            document
-                                .getElementById("warranty")
-                                .value
-                                .trim(),
 
-                        age:
-                            document
-                                .getElementById("age")
-                                .value
-                                .trim(),
+/* ================= IMAGE UPLOAD ================= */
 
-                        bill:
-                            document
-                                .getElementById("bill")
-                                .value,
+for (
+    let i = 1;
+    i <= 6;
+    i++
+) {
 
-                        box:
-                            document
-                                .getElementById("box")
-                                .value,
+    const input =
+        document.getElementById(
+            "image" + i
+        );
 
-                        price:
-                            document
-                                .getElementById("price")
-                                .value
-                                .trim()
+    const preview =
+        document.getElementById(
+            "preview" + i
+        );
 
-                    };
 
+    input.addEventListener(
+        "change",
+        function() {
 
-                    /* ====================================
-                       EDIT EXISTING MOBILE
-                    ==================================== */
+            const file =
+                this.files[0];
 
-                    if (
-                        editIndex >= 0 &&
-                        editIndex < mobiles.length
-                    ) {
 
-                        mobiles[editIndex] =
-                            mobile;
-
-                    }
-
-                    /* ====================================
-                       ADD NEW MOBILE
-                    ==================================== */
-
-                    else {
-
-                        mobiles.push(mobile);
-
-                    }
-
-
-                    /* ====================================
-                       SAVE
-                    ==================================== */
-
-                    localStorage.setItem(
-                        "smfMobiles",
-                        JSON.stringify(mobiles)
-                    );
-
-
-                    alert(
-                        editIndex >= 0
-                            ? "Mobile updated successfully!"
-                            : "Mobile added successfully!"
-                    );
-
-
-                    resetForm();
-
-                    displayMobiles();
-
-                }
-            );
-
-
-        /* ============================================
-           DISPLAY MOBILES
-        ============================================ */
-
-        function displayMobiles() {
-
-            const mobileList =
-                document.getElementById(
-                    "mobileList"
-                );
-
-
-            mobileList.innerHTML = "";
-
-
-            if (mobiles.length === 0) {
-
-                mobileList.innerHTML = `
-
-                    <div class="empty-stock">
-
-                        <h3>
-                            No Mobiles Added Yet
-                        </h3>
-
-                        <p>
-                            Add your available mobile
-                            using the form above.
-                        </p>
-
-                    </div>
-
-                `;
-
-                return;
-
-            }
-
-
-            mobiles.forEach(
-                function (mobile, index) {
-
-
-                    const card =
-                        document.createElement(
-                            "div"
-                        );
-
-
-                    card.className =
-                        "mobile-card";
-
-
-                    /*
-                     * Support both:
-                     * New 6-image system
-                     * Old single-image system
-                     */
-
-                    let images =
-                        Array.isArray(mobile.images)
-                            ? mobile.images.filter(Boolean)
-                            : [];
-
-
-                    if (
-                        images.length === 0 &&
-                        mobile.image
-                    ) {
-
-                        images = [
-                            mobile.image
-                        ];
-
-                    }
-
-
-                    let mainImage =
-                        images.length > 0
-                            ? images[0]
-                            : "";
-
-
-                    card.innerHTML = `
-
-                        <div class="mobile-image">
-
-                            ${
-                                mainImage
-
-                                ?
-
-                                `<img
-                                    src="${mainImage}"
-                                    alt="${
-                                        mobile.brand || ""
-                                    } ${
-                                        mobile.model || ""
-                                    }"
-                                >`
-
-                                :
-
-                                `<div class="no-image">
-                                    No Image
-                                </div>`
-                            }
-
-                            <span class="stock-badge">
-                                AVAILABLE
-                            </span>
-
-                        </div>
-
-
-                        <div class="mobile-info">
-
-                            <h3>
-                                ${
-                                    mobile.brand || ""
-                                }
-                                ${
-                                    mobile.model || ""
-                                }
-                            </h3>
-
-
-                            ${
-                                mobile.price
-
-                                ?
-
-                                `<div class="mobile-price">
-                                    ₹${mobile.price}
-                                </div>`
-
-                                : ""
-
-                            }
-
-
-                            <div class="mobile-specs">
-
-                                ${
-                                    mobile.ram
-
-                                    ?
-
-                                    `<div>
-                                        <strong>RAM</strong>
-                                        <span>
-                                            ${mobile.ram}
-                                        </span>
-                                    </div>`
-
-                                    : ""
-                                }
-
-
-                                ${
-                                    mobile.storage
-
-                                    ?
-
-                                    `<div>
-                                        <strong>Storage</strong>
-                                        <span>
-                                            ${mobile.storage}
-                                        </span>
-                                    </div>`
-
-                                    : ""
-                                }
-
-
-                                ${
-                                    mobile.display
-
-                                    ?
-
-                                    `<div>
-                                        <strong>Display</strong>
-                                        <span>
-                                            ${mobile.display}
-                                        </span>
-                                    </div>`
-
-                                    : ""
-                                }
-
-
-                                ${
-                                    mobile.camera
-
-                                    ?
-
-                                    `<div>
-                                        <strong>Camera</strong>
-                                        <span>
-                                            ${mobile.camera}
-                                        </span>
-                                    </div>`
-
-                                    : ""
-                                }
-
-                            </div>
-
-
-                            <div class="mobile-details">
-
-                                ${
-                                    mobile.battery
-
-                                    ?
-
-                                    `<p>
-                                        <strong>
-                                            Battery:
-                                        </strong>
-                                        ${mobile.battery}
-                                    </p>`
-
-                                    : ""
-                                }
-
-
-                                ${
-                                    mobile.condition
-
-                                    ?
-
-                                    `<p>
-                                        <strong>
-                                            Condition:
-                                        </strong>
-                                        ${mobile.condition}
-                                    </p>`
-
-                                    : ""
-                                }
-
-
-                                ${
-                                    mobile.warranty
-
-                                    ?
-
-                                    `<p>
-                                        <strong>
-                                            Warranty:
-                                        </strong>
-                                        ${mobile.warranty}
-                                    </p>`
-
-                                    : ""
-                                }
-
-
-                                ${
-                                    mobile.age
-
-                                    ?
-
-                                    `<p>
-                                        <strong>
-                                            Age:
-                                        </strong>
-                                        ${mobile.age}
-                                    </p>`
-
-                                    : ""
-                                }
-
-
-                                ${
-                                    mobile.bill
-
-                                    ?
-
-                                    `<p>
-                                        <strong>
-                                            Bill:
-                                        </strong>
-                                        ${mobile.bill}
-                                    </p>`
-
-                                    : ""
-                                }
-
-
-                                ${
-                                    mobile.box
-
-                                    ?
-
-                                    `<p>
-                                        <strong>
-                                            Box:
-                                        </strong>
-                                        ${mobile.box}
-                                    </p>`
-
-                                    : ""
-                                }
-
-                            </div>
-
-
-                            ${
-                                images.length > 1
-
-                                ?
-
-                                `<p class="photo-count">
-                                    ${images.length}
-                                    Photos Available
-                                </p>`
-
-                                : ""
-                            }
-
-
-                            <div class="mobile-actions">
-
-                                <button
-                                    type="button"
-                                    class="btn"
-                                    onclick="editMobile(${index})">
-                                    Edit
-                                </button>
-
-
-                                <button
-                                    type="button"
-                                    class="btn btn-outline"
-                                    onclick="deleteMobile(${index})">
-                                    Delete
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                    `;
-
-
-                    mobileList.appendChild(card);
-
-                }
-            );
-
-        }
-
-
-        /* ============================================
-           EDIT MOBILE
-        ============================================ */
-
-        function editMobile(index) {
-
-            const mobile =
-                mobiles[index];
-
-
-            if (!mobile) {
+            if (!file) {
                 return;
             }
-
-
-            document.getElementById(
-                "editIndex"
-            ).value = index;
-
-
-            document.getElementById(
-                "brand"
-            ).value =
-                mobile.brand || "";
-
-
-            document.getElementById(
-                "model"
-            ).value =
-                mobile.model || "";
-
-
-            document.getElementById(
-                "ram"
-            ).value =
-                mobile.ram || "";
-
-
-            document.getElementById(
-                "storage"
-            ).value =
-                mobile.storage || "";
-
-
-            document.getElementById(
-                "display"
-            ).value =
-                mobile.display || "";
-
-
-            document.getElementById(
-                "camera"
-            ).value =
-                mobile.camera || "";
-
-
-            document.getElementById(
-                "battery"
-            ).value =
-                mobile.battery || "";
-
-
-            document.getElementById(
-                "condition"
-            ).value =
-                mobile.condition || "";
-
-
-            document.getElementById(
-                "warranty"
-            ).value =
-                mobile.warranty || "";
-
-
-            document.getElementById(
-                "age"
-            ).value =
-                mobile.age || "";
-
-
-            document.getElementById(
-                "bill"
-            ).value =
-                mobile.bill || "Yes";
-
-
-            document.getElementById(
-                "box"
-            ).value =
-                mobile.box || "Yes";
-
-
-            document.getElementById(
-                "price"
-            ).value =
-                mobile.price || "";
 
 
             /*
-             * Load existing photos
+             * Limit image size to 3 MB
              */
 
             if (
-                Array.isArray(mobile.images)
+                file.size >
+                3 * 1024 * 1024
             ) {
 
-                imageData =
-                    [
-                        mobile.images[0] || "",
-                        mobile.images[1] || "",
-                        mobile.images[2] || "",
-                        mobile.images[3] || "",
-                        mobile.images[4] || "",
-                        mobile.images[5] || ""
-                    ];
+                alert(
+                    "Photo " +
+                    i +
+                    " is larger than 3 MB. Please choose a smaller photo."
+                );
 
-            } else {
+                this.value = "";
 
-                imageData =
-                    [
-                        mobile.image || "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ];
+                return;
 
             }
 
 
-            /*
-             * Show existing photo previews
-             */
-
-            for (
-                let i = 1;
-                i <= 6;
-                i++
-            ) {
-
-                const preview =
-                    document.getElementById(
-                        "preview" + i
-                    );
+            const reader =
+                new FileReader();
 
 
-                if (
-                    imageData[i - 1]
-                ) {
+            reader.onload =
+                function(event) {
+
+                    imageData[i - 1] =
+                        event.target.result;
+
 
                     preview.innerHTML = `
 
                         <img
-                            src="${imageData[i - 1]}"
-                            alt="Mobile Photo ${i}"
+                            src="${event.target.result}"
+                            alt="Photo ${i}"
                         >
 
                     `;
 
-                } else {
-
-                    preview.innerHTML =
-                        "No Photo";
-
-                }
-
-            }
+                };
 
 
-            document.getElementById(
-                "formTitle"
-            ).textContent =
-                "Edit Mobile";
-
-
-            document.getElementById(
-                "submitButton"
-            ).textContent =
-                "Update Mobile";
-
-
-            document.getElementById(
-                "cancelButton"
-            ).style.display =
-                "inline-block";
-
-
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
+            reader.readAsDataURL(file);
 
         }
+    );
+
+}
 
 
-        /* ============================================
-           DELETE MOBILE
-        ============================================ */
+/* ================= FORM SUBMIT ================= */
 
-        function deleteMobile(index) {
+document
+    .getElementById("mobileForm")
+    .addEventListener(
+        "submit",
+        function(event) {
 
-            const mobile =
-                mobiles[index];
-
-
-            if (!mobile) {
-                return;
-            }
+            event.preventDefault();
 
 
-            const name =
-                `${mobile.brand || ""} ${
-                    mobile.model || ""
-                }`.trim();
-
-
-            const confirmDelete =
-                confirm(
-                    `Are you sure you want to delete ${
-                        name || "this mobile"
-                    }?`
+            const editIndex =
+                parseInt(
+                    document.getElementById(
+                        "editIndex"
+                    ).value
                 );
 
 
-            if (!confirmDelete) {
-                return;
+            const mobile = {
+
+                /*
+                 * ALL SIX PHOTOS
+                 */
+
+                images:
+                    imageData.filter(
+                        image =>
+                            image &&
+                            image.trim() !== ""
+                    ),
+
+
+                /*
+                 * Keep old field for compatibility
+                 */
+
+                image:
+                    imageData[0] || "",
+
+
+                brand:
+                    document
+                        .getElementById("brand")
+                        .value
+                        .trim(),
+
+
+                model:
+                    document
+                        .getElementById("model")
+                        .value
+                        .trim(),
+
+
+                ram:
+                    document
+                        .getElementById("ram")
+                        .value
+                        .trim(),
+
+
+                storage:
+                    document
+                        .getElementById("storage")
+                        .value
+                        .trim(),
+
+
+                display:
+                    document
+                        .getElementById("display")
+                        .value
+                        .trim(),
+
+
+                camera:
+                    document
+                        .getElementById("camera")
+                        .value
+                        .trim(),
+
+
+                battery:
+                    document
+                        .getElementById("battery")
+                        .value
+                        .trim(),
+
+
+                condition:
+                    document
+                        .getElementById("condition")
+                        .value,
+
+
+                warranty:
+                    document
+                        .getElementById("warranty")
+                        .value
+                        .trim(),
+
+
+                age:
+                    document
+                        .getElementById("age")
+                        .value
+                        .trim(),
+
+
+                bill:
+                    document
+                        .getElementById("bill")
+                        .value,
+
+
+                box:
+                    document
+                        .getElementById("box")
+                        .value,
+
+
+                price:
+                    document
+                        .getElementById("price")
+                        .value
+                        .trim()
+
+            };
+
+
+            /* ================= EDIT ================= */
+
+            if (
+                editIndex >= 0 &&
+                editIndex < mobiles.length
+            ) {
+
+                mobiles[editIndex] =
+                    mobile;
+
             }
 
 
-            mobiles.splice(index, 1);
+            /* ================= ADD ================= */
 
+            else {
+
+                mobiles.push(
+                    mobile
+                );
+
+            }
+
+
+            /* ================= SAVE ================= */
 
             localStorage.setItem(
                 "smfMobiles",
@@ -1414,104 +951,760 @@
             );
 
 
-            displayMobiles();
-
-        }
-
-
-        /* ============================================
-           CANCEL EDIT
-        ============================================ */
-
-        document
-            .getElementById("cancelButton")
-            .addEventListener(
-                "click",
-                function () {
-
-                    resetForm();
-
-                }
+            alert(
+                editIndex >= 0
+                    ? "Mobile updated successfully!"
+                    : "Mobile added successfully!"
             );
 
 
-        /* ============================================
-           RESET FORM
-        ============================================ */
+            resetForm();
 
-        function resetForm() {
+            displayMobiles();
 
-            document
-                .getElementById("mobileForm")
-                .reset();
+        }
+    );
 
 
-            document.getElementById(
-                "editIndex"
-            ).value = "-1";
+/* ================= GET IMAGES ================= */
+
+function getMobileImages(mobile) {
+
+    let images = [];
 
 
-            document.getElementById(
-                "formTitle"
-            ).textContent =
-                "Add Available Mobile";
+    if (
+        Array.isArray(mobile.images)
+    ) {
+
+        images =
+            mobile.images.filter(
+                image =>
+                    image &&
+                    image.trim() !== ""
+            );
+
+    }
 
 
-            document.getElementById(
-                "submitButton"
-            ).textContent =
-                "Add Mobile";
+    /*
+     * Old one-image records
+     */
+
+    if (
+        images.length === 0 &&
+        mobile.image
+    ) {
+
+        images.push(
+            mobile.image
+        );
+
+    }
 
 
-            document.getElementById(
-                "cancelButton"
-            ).style.display =
-                "none";
+    return images;
+
+}
 
 
-            imageData = [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
-            ];
+/* ================= DISPLAY ================= */
+
+function displayMobiles() {
+
+    const mobileList =
+        document.getElementById(
+            "mobileList"
+        );
 
 
-            for (
-                let i = 1;
-                i <= 6;
-                i++
+    mobileList.innerHTML = "";
+
+
+    if (
+        mobiles.length === 0
+    ) {
+
+        mobileList.innerHTML = `
+
+            <div class="empty-stock">
+
+                <div class="empty-icon">
+                    📱
+                </div>
+
+                <h3>
+                    No Mobiles Added Yet
+                </h3>
+
+                <p>
+                    Add your available mobile
+                    using the form above.
+                </p>
+
+            </div>
+
+        `;
+
+        return;
+
+    }
+
+
+    mobiles.forEach(
+        function(mobile, index) {
+
+            const card =
+                document.createElement(
+                    "div"
+                );
+
+
+            card.className =
+                "mobile-card";
+
+
+            const images =
+                getMobileImages(
+                    mobile
+                );
+
+
+            const mobileName =
+                `${mobile.brand || ""} ${
+                    mobile.model || ""
+                }`.trim();
+
+
+            /*
+             * SHOW ALL PHOTOS
+             */
+
+            let galleryHTML = "";
+
+
+            if (
+                images.length > 0
             ) {
 
-                document.getElementById(
-                    "preview" + i
-                ).innerHTML =
-                    "No Photo";
+                galleryHTML = `
+
+                    <div class="mobile-gallery">
+
+                        ${images.map(
+                            function(image, imageIndex) {
+
+                                return `
+
+                                    <img
+                                        src="${image}"
+                                        alt="${mobileName} Photo ${
+                                            imageIndex + 1
+                                        }"
+                                        class="gallery-image"
+                                    >
+
+                                `;
+
+                            }
+                        ).join("")}
+
+                    </div>
+
+                `;
+
+            } else {
+
+                galleryHTML = `
+
+                    <div class="no-image">
+                        <span>📱</span>
+                        <p>No Image</p>
+                    </div>
+
+                `;
 
             }
 
+
+            card.innerHTML = `
+
+                <div class="mobile-image-wrapper">
+
+                    ${galleryHTML}
+
+                    <span class="stock-badge">
+                        AVAILABLE
+                    </span>
+
+                </div>
+
+
+                <div class="mobile-info">
+
+                    <h3>
+                        ${
+                            mobileName ||
+                            "Mobile Phone"
+                        }
+                    </h3>
+
+
+                    ${
+                        mobile.price
+
+                        ?
+
+                        `<div class="mobile-price">
+                            ₹${mobile.price}
+                        </div>`
+
+                        : ""
+
+                    }
+
+
+                    <div class="mobile-specs">
+
+                        ${
+                            mobile.ram
+
+                            ?
+
+                            `<div>
+                                <strong>RAM</strong>
+                                <span>
+                                    ${mobile.ram}
+                                </span>
+                            </div>`
+
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.storage
+
+                            ?
+
+                            `<div>
+                                <strong>Storage</strong>
+                                <span>
+                                    ${mobile.storage}
+                                </span>
+                            </div>`
+
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.display
+
+                            ?
+
+                            `<div>
+                                <strong>Display</strong>
+                                <span>
+                                    ${mobile.display}
+                                </span>
+                            </div>`
+
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.camera
+
+                            ?
+
+                            `<div>
+                                <strong>Camera</strong>
+                                <span>
+                                    ${mobile.camera}
+                                </span>
+                            </div>`
+
+                            : ""
+                        }
+
+                    </div>
+
+
+                    <div class="mobile-details">
+
+                        ${
+                            mobile.battery
+
+                            ?
+
+                            `<p>
+                                <strong>Battery:</strong>
+                                ${mobile.battery}
+                            </p>`
+
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.condition
+
+                            ?
+
+                            `<p>
+                                <strong>Condition:</strong>
+                                ${mobile.condition}
+                            </p>`
+
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.warranty
+
+                            ?
+
+                            `<p>
+                                <strong>Warranty:</strong>
+                                ${mobile.warranty}
+                            </p>`
+
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.age
+
+                            ?
+
+                            `<p>
+                                <strong>Age:</strong>
+                                ${mobile.age}
+                            </p>`
+
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.bill
+
+                            ?
+
+                            `<p>
+                                <strong>Bill:</strong>
+                                ${mobile.bill}
+                            </p>`
+
+                            : ""
+                        }
+
+
+                        ${
+                            mobile.box
+
+                            ?
+
+                            `<p>
+                                <strong>Box:</strong>
+                                ${mobile.box}
+                            </p>`
+
+                            : ""
+                        }
+
+                    </div>
+
+
+                    ${
+                        images.length > 0
+
+                        ?
+
+                        `<div class="photo-count">
+                            📷 ${images.length}
+                            ${
+                                images.length === 1
+                                ? "Photo"
+                                : "Photos"
+                            }
+                        </div>`
+
+                        : ""
+
+                    }
+
+
+                    <div class="mobile-actions">
+
+                        <button
+                            type="button"
+                            class="btn"
+                            onclick="editMobile(${index})">
+
+                            Edit
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="btn btn-outline"
+                            onclick="deleteMobile(${index})">
+
+                            Delete
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            `;
+
+
+            mobileList.appendChild(
+                card
+            );
+
+        }
+    );
+
+}
+
+
+/* ================= EDIT ================= */
+
+function editMobile(index) {
+
+    const mobile =
+        mobiles[index];
+
+
+    if (!mobile) {
+        return;
+    }
+
+
+    document.getElementById(
+        "editIndex"
+    ).value = index;
+
+
+    document.getElementById(
+        "brand"
+    ).value =
+        mobile.brand || "";
+
+
+    document.getElementById(
+        "model"
+    ).value =
+        mobile.model || "";
+
+
+    document.getElementById(
+        "ram"
+    ).value =
+        mobile.ram || "";
+
+
+    document.getElementById(
+        "storage"
+    ).value =
+        mobile.storage || "";
+
+
+    document.getElementById(
+        "display"
+    ).value =
+        mobile.display || "";
+
+
+    document.getElementById(
+        "camera"
+    ).value =
+        mobile.camera || "";
+
+
+    document.getElementById(
+        "battery"
+    ).value =
+        mobile.battery || "";
+
+
+    document.getElementById(
+        "condition"
+    ).value =
+        mobile.condition || "";
+
+
+    document.getElementById(
+        "warranty"
+    ).value =
+        mobile.warranty || "";
+
+
+    document.getElementById(
+        "age"
+    ).value =
+        mobile.age || "";
+
+
+    document.getElementById(
+        "bill"
+    ).value =
+        mobile.bill || "Yes";
+
+
+    document.getElementById(
+        "box"
+    ).value =
+        mobile.box || "Yes";
+
+
+    document.getElementById(
+        "price"
+    ).value =
+        mobile.price || "";
+
+
+    /*
+     * LOAD ALL SIX PHOTOS
+     */
+
+    if (
+        Array.isArray(mobile.images)
+    ) {
+
+        imageData = [
+            mobile.images[0] || "",
+            mobile.images[1] || "",
+            mobile.images[2] || "",
+            mobile.images[3] || "",
+            mobile.images[4] || "",
+            mobile.images[5] || ""
+        ];
+
+    } else {
+
+        imageData = [
+            mobile.image || "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ];
+
+    }
+
+
+    /*
+     * SHOW PHOTO PREVIEWS
+     */
+
+    for (
+        let i = 1;
+        i <= 6;
+        i++
+    ) {
+
+        const preview =
+            document.getElementById(
+                "preview" + i
+            );
+
+
+        if (
+            imageData[i - 1]
+        ) {
+
+            preview.innerHTML = `
+
+                <img
+                    src="${imageData[i - 1]}"
+                    alt="Photo ${i}"
+                >
+
+            `;
+
+        } else {
+
+            preview.innerHTML =
+                "No Photo";
+
         }
 
+    }
 
-        /* ============================================
-           YEAR
-        ============================================ */
+
+    document.getElementById(
+        "formTitle"
+    ).textContent =
+        "Edit Mobile";
+
+
+    document.getElementById(
+        "submitButton"
+    ).textContent =
+        "Update Mobile";
+
+
+    document.getElementById(
+        "cancelButton"
+    ).style.display =
+        "inline-block";
+
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+
+/* ================= DELETE ================= */
+
+function deleteMobile(index) {
+
+    const mobile =
+        mobiles[index];
+
+
+    if (!mobile) {
+        return;
+    }
+
+
+    const name =
+        `${mobile.brand || ""} ${
+            mobile.model || ""
+        }`.trim();
+
+
+    if (
+        !confirm(
+            `Are you sure you want to delete ${
+                name || "this mobile"
+            }?`
+        )
+    ) {
+
+        return;
+
+    }
+
+
+    mobiles.splice(
+        index,
+        1
+    );
+
+
+    localStorage.setItem(
+        "smfMobiles",
+        JSON.stringify(mobiles)
+    );
+
+
+    displayMobiles();
+
+}
+
+
+/* ================= CANCEL ================= */
+
+document
+    .getElementById("cancelButton")
+    .addEventListener(
+        "click",
+        function() {
+
+            resetForm();
+
+        }
+    );
+
+
+/* ================= RESET ================= */
+
+function resetForm() {
+
+    document
+        .getElementById("mobileForm")
+        .reset();
+
+
+    document.getElementById(
+        "editIndex"
+    ).value = "-1";
+
+
+    document.getElementById(
+        "formTitle"
+    ).textContent =
+        "Add Available Mobile";
+
+
+    document.getElementById(
+        "submitButton"
+    ).textContent =
+        "Add Mobile";
+
+
+    document.getElementById(
+        "cancelButton"
+    ).style.display =
+        "none";
+
+
+    imageData = [
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ];
+
+
+    for (
+        let i = 1;
+        i <= 6;
+        i++
+    ) {
 
         document.getElementById(
-            "year"
-        ).textContent =
-            new Date().getFullYear();
+            "preview" + i
+        ).innerHTML =
+            "No Photo";
+
+    }
+
+}
 
 
-        /* ============================================
-           INITIAL DISPLAY
-        ============================================ */
+/* ================= YEAR ================= */
 
-        displayMobiles();
+document.getElementById(
+    "year"
+).textContent =
+    new Date().getFullYear();
 
-    </script>
+
+/* ================= START ================= */
+
+loadData();
+
+displayMobiles();
+
+</script>
 
 </body>
 </html>
